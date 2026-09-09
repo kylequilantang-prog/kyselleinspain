@@ -82,19 +82,19 @@ p { margin: 0 0 1em; max-width: var(--measure); }
 /* Canva "Spacing" units are 1/1000 em, not px */
 .paragraph-xl {
   font-family: var(--font-body);
-  font-size: 25px;
+  font-size: clamp(1.1rem, 1rem + 1vw, 1.5625rem);
   letter-spacing: 0.1em; /* Canva Spacing: 100 */
   line-height: 1.3;
 }
 .paragraph-main {
   font-family: var(--font-body);
-  font-size: 22px;
+  font-size: clamp(0.9rem, 0.9rem + 0.85vw, 1.375rem);
   letter-spacing: 0.01em; /* Canva Spacing: 10 */
   line-height: 1.3;
 }
 .paragraph-sm {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.82rem + 0.45vw, 1rem);
   letter-spacing: 0.01em; /* Canva Spacing: 10 */
   line-height: 1.3;
 }
@@ -1093,7 +1093,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .rsvp-field > label {
   font-family: var(--font-body);
-  font-size: 22px;
+  font-size: var(--text-main);
   letter-spacing: 0.01em;
   color: var(--ink);
 }
@@ -1107,7 +1107,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .rsvp-field-inline label {
   font-family: var(--font-body);
-  font-size: 22px;
+  font-size: var(--text-main);
   letter-spacing: 0.01em;
   color: var(--ink);
   white-space: nowrap;
@@ -1124,7 +1124,7 @@ img { max-width: 100%; height: auto; display: block; }
   width: 100%;
   padding: 0.3rem 0.2rem;
   font-family: var(--font-body);
-  font-size: 22px;
+  font-size: var(--text-main);
   letter-spacing: 0.01em;
   color: var(--ink);
   background: transparent;
@@ -1164,7 +1164,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: block;
   padding-left: 2.1rem;
   font-family: var(--font-body);
-  font-size: 22px;
+  font-size: var(--text-main);
   letter-spacing: 0.01em;
   color: var(--ink);
   cursor: pointer;
@@ -1276,7 +1276,7 @@ img { max-width: 100%; height: auto; display: block; }
 .rsvp-status[data-state="error"] { color: var(--pink); }
 .rsvp-status[data-state="success"] {
   color: var(--ink);
-  font-size: 25px;
+  font-size: var(--text-xl);
   letter-spacing: 0.1em;
 }
 
