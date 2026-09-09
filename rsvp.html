@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ── Edit these three lines for your site ───────────────────────── -->
+  <title>RSVP | Kyselle in Spain</title>
+  <meta name="description" content="RSVP for Jyselle and Kyle's wedding in Malaga, Spain.">
+  <link rel="canonical" href="https://kyselleinspain.com/rsvp.html">
+  <!-- ───────────────────────────────────────────────────────────────── -->
+
+  <!-- Social preview (shows when the link is shared) -->
+  <meta property="og:title" content="RSVP | Kyselle's Wedding in Spain">
+  <meta property="og:description" content="RSVP for Jyselle and Kyle's wedding in Malaga, Spain.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kyselleinspain.com/rsvp.html">
+  <meta property="og:image" content="https://kyselleinspain.com/assets/img/social-preview.png">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preload" href="assets/fonts/optima/OPTIMA.TTF?v=1788412610" as="font" type="font/ttf" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css?v=1788925077">
+</head>
+
+<body>
+  <main id="main">
+
+    <section id="rsvp" class="rsvp">
+      <div class="rsvp-inner wrap">
+        <div class="rsvp-intro">
+          <h2 class="rsvp-title h2">RSVP</h2>
+          <p class="rsvp-lede paragraph-xl">Please kindly respond before October 14, 2026</p>
+
+          <p class="rsvp-contact paragraph-xl">
+            Contact either:<br>
+            Jyselle: <a href="tel:+18056161555">(805) 616-1555</a><br>
+            Kyle: <a href="tel:+16619648819">(661) 964-8819</a><br>
+            <br>
+            More details to come!
+          </p>
+        </div>
+
+        <div class="rsvp-form-col">
+          <div class="rsvp-stamp">
+            <form id="rsvp-form" class="rsvp-form" novalidate>
+
+              <div class="rsvp-form-fields">
+                <div class="rsvp-field rsvp-field-inline">
+                  <label for="rsvp-names">Name(s):</label>
+                  <input type="text" id="rsvp-names" name="Name(s)" required>
+                </div>
+
+                <div class="rsvp-field">
+                  <label class="rsvp-choice">
+                    <input type="checkbox" id="rsvp-accepts" name="Accepts with delight" value="Yes">
+                    <span>Accepts with delight</span>
+                  </label>
+
+                  <div class="rsvp-field-inline rsvp-guest-line">
+                    <label for="rsvp-guest-count">Number of guests attending:</label>
+                    <input type="number" id="rsvp-guest-count" name="Number of guests attending" min="1" max="10" step="1">
+                  </div>
+
+                  <label class="rsvp-choice">
+                    <input type="checkbox" id="rsvp-declines" name="Declines with regret" value="Yes">
+                    <span>Declines with regret</span>
+                  </label>
+                </div>
+
+                <button type="submit" class="rsvp-submit paragraph-main">SEND RSVP</button>
+              </div>
+
+              <p class="rsvp-status paragraph-main" role="status" aria-live="polite" hidden></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+  <script src="rsvp.js"></script>
+</body>
+</html>
