@@ -221,6 +221,17 @@ img { max-width: 100%; height: auto; display: block; }
     display: inline-flex;
     position: relative;
     z-index: 30;
+    padding: 0.6rem 0.9rem;
+  }
+  .nav-toggle-bar {
+    width: 24px;
+    height: 3px;
+    box-shadow: 0 7px 0 currentColor, 0 -7px 0 currentColor;
+  }
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar::before,
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar::after {
+    width: 24px;
+    height: 3px;
   }
   .header-inner { justify-content: flex-end; }
   .site-nav {
