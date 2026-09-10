@@ -18,6 +18,9 @@
   --measure:    64ch;
   --wrap:       68rem;
   --radius:     6px;
+
+  --text-main:  clamp(0.9rem, 0.9rem + 0.85vw, 1.375rem);
+  --text-xl:    clamp(1.1rem, 1rem + 1vw, 1.5625rem);
 }
 
 /* =================================================================
@@ -1093,8 +1096,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 .rsvp-field > label {
   font-family: var(--font-body);
-  font-size: var(--text-main);
-  letter-spacing: 0.01em;
+  font-size: var(--text-xl);
+  letter-spacing: 0.1em;
   color: var(--ink);
 }
 
@@ -1107,8 +1110,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 .rsvp-field-inline label {
   font-family: var(--font-body);
-  font-size: var(--text-main);
-  letter-spacing: 0.01em;
+  font-size: var(--text-xl);
+  letter-spacing: 0.1em;
   color: var(--ink);
   white-space: nowrap;
 }
@@ -1124,8 +1127,8 @@ img { max-width: 100%; height: auto; display: block; }
   width: 100%;
   padding: 0.3rem 0.2rem;
   font-family: var(--font-body);
-  font-size: var(--text-main);
-  letter-spacing: 0.01em;
+  font-size: var(--text-xl);
+  letter-spacing: 0.1em;
   color: var(--ink);
   background: transparent;
   border: none;
@@ -1164,8 +1167,8 @@ img { max-width: 100%; height: auto; display: block; }
   display: block;
   padding-left: 2.1rem;
   font-family: var(--font-body);
-  font-size: var(--text-main);
-  letter-spacing: 0.01em;
+  font-size: var(--text-xl);
+  letter-spacing: 0.1em;
   color: var(--ink);
   cursor: pointer;
   transition: color 0.2s ease;
