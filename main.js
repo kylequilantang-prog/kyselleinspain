@@ -16,6 +16,7 @@
     toggle.addEventListener("click", function () {
       var isOpen = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(isOpen));
+      document.body.classList.toggle("nav-open", isOpen);
     });
 
     // Close the menu after tapping a link on small screens.
@@ -23,6 +24,7 @@
       if (event.target.tagName === "A") {
         nav.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
       }
     });
   }
