@@ -190,10 +190,31 @@ img { max-width: 100%; height: auto; display: block; }
   cursor: pointer;
 }
 .nav-toggle-bar {
+  position: relative;
   width: 16px; height: 2px;
   background: currentColor;
   box-shadow: 0 5px 0 currentColor, 0 -5px 0 currentColor;
 }
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-label {
+  display: none;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar {
+  background: transparent;
+  box-shadow: none;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar::before,
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 2px;
+  background: currentColor;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar::before { transform: rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar::after { transform: rotate(-45deg); }
 
 @media (max-width: 640px) {
   .nav-toggle {
