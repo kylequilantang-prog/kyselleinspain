@@ -186,7 +186,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 0.4rem 0.7rem;
   font: inherit;
   font-size: var(--size-sm);
-  color: var(--light-green);
+  color: var(--cream);
   cursor: pointer;
 }
 .nav-toggle-bar {
@@ -197,6 +197,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 @media (max-width: 640px) {
   .nav-toggle { display: inline-flex; }
+  .header-inner { justify-content: flex-end; }
   .site-nav {
     display: none;
     flex-direction: column;
