@@ -1165,20 +1165,16 @@ img { max-width: 100%; height: auto; display: block; }
   white-space: nowrap;
 }
 
-.rsvp-guest-line {
-  display: block;
+.rsvp-field-inline.rsvp-guest-line {
+  flex-wrap: nowrap;
+  align-items: flex-start;
   margin-left: 1.85rem;
 }
 
-.rsvp-guest-line label {
-  display: inline;
+.rsvp-field-inline.rsvp-guest-line > label {
   white-space: normal;
-}
-
-.rsvp-guest-line input[type="number"] {
-  display: inline-block;
-  vertical-align: baseline;
-  margin-left: 0.5rem;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .rsvp-field input[type="text"],
@@ -1199,9 +1195,10 @@ img { max-width: 100%; height: auto; display: block; }
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.rsvp-guest-line input[type="number"] {
+.rsvp-field-inline.rsvp-guest-line > input[type="number"] {
   flex: none;
   width: 3.5rem;
+  margin-left: 0.5rem;
 }
 
 .rsvp-field input:hover {
