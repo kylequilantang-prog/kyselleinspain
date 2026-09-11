@@ -1166,6 +1166,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 @media (max-width: 600px) {
+  .rsvp-guest-line {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
   .rsvp-guest-line label {
     white-space: normal;
   }
