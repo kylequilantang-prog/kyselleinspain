@@ -1169,6 +1169,17 @@ img { max-width: 100%; height: auto; display: block; }
   .rsvp-guest-line label {
     white-space: normal;
   }
+  .rsvp-guest-line {
+    display: block;
+  }
+  .rsvp-guest-line label {
+    display: inline;
+  }
+  .rsvp-guest-line input[type="number"] {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 0.5rem;
+  }
 }
 
 .rsvp-guest-line {
