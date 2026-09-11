@@ -1085,12 +1085,6 @@ img { max-width: 100%; height: auto; display: block; }
   }
 }
 
-@media (max-width: 600px) {
-  .rsvp-guest-line label {
-    white-space: normal;
-  }
-}
-
 .rsvp-stamp {
   --perf-r: 8px;
   --perf-gap: 24px;
@@ -1128,6 +1122,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .rsvp-form {
   flex: 1;
+  min-width: 0;
   text-align: left;
   display: grid;
   align-content: center;
@@ -1135,6 +1130,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .rsvp-form-fields {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-lg);
 }
 
@@ -1167,6 +1163,12 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 0.1em;
   color: var(--ink);
   white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .rsvp-guest-line label {
+    white-space: normal;
+  }
 }
 
 .rsvp-guest-line {
