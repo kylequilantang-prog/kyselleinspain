@@ -20,7 +20,7 @@
   --radius:     6px;
 
   --text-main:  clamp(0.9rem, 0.9rem + 0.85vw, 1.375rem);
-  --text-xl:    clamp(1.1rem, 1rem + 1vw, 1.5625rem);
+  --text-xl:    22px;
 }
 
 /* =================================================================
