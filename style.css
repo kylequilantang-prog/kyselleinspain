@@ -1165,25 +1165,20 @@ img { max-width: 100%; height: auto; display: block; }
   white-space: nowrap;
 }
 
-@media (max-width: 600px) {
-  .rsvp-guest-line label {
-    white-space: normal;
-  }
-  .rsvp-guest-line {
-    display: block;
-  }
-  .rsvp-guest-line label {
-    display: inline;
-  }
-  .rsvp-guest-line input[type="number"] {
-    display: inline-block;
-    vertical-align: baseline;
-    margin-left: 0.5rem;
-  }
+.rsvp-guest-line {
+  display: block;
+  margin-left: 1.85rem;
 }
 
-.rsvp-guest-line {
-  margin-left: 1.85rem;
+.rsvp-guest-line label {
+  display: inline;
+  white-space: normal;
+}
+
+.rsvp-guest-line input[type="number"] {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 0.5rem;
 }
 
 .rsvp-field input[type="text"],
