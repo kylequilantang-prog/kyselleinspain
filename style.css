@@ -1145,6 +1145,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .rsvp-note {
   color: #000;
+  font-size: 22px;
   margin: 0 0 calc(var(--space) - var(--space-lg));
 }
 
