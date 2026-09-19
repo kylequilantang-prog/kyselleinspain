@@ -1143,6 +1143,11 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 0.75rem;
 }
 
+.rsvp-note {
+  color: #000;
+  margin: calc(var(--space) - var(--space-lg)) 0 0;
+}
+
 .rsvp-field > label {
   font-family: var(--font-body);
   font-size: var(--text-xl);
