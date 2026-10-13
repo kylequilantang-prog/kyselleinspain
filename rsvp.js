@@ -48,8 +48,8 @@
     });
   }
 
-  // Guest count is capped at 10, since the max attribute alone doesn't
-  // stop someone from typing a bigger number.
+  // Guest count is limited to 1-10, since the min/max attributes alone don't
+  // stop someone from typing a number outside that range.
   var guestCount = document.getElementById("rsvp-guest-count");
   if (guestCount) {
     guestCount.addEventListener("input", function () {
@@ -58,6 +58,9 @@
       }
       if (Number(guestCount.value) > 10) {
         guestCount.value = "10";
+      }
+      if (guestCount.value !== "" && Number(guestCount.value) < 1) {
+        guestCount.value = "1";
       }
       guestCount.classList.remove("rsvp-field-invalid");
     });
@@ -89,7 +92,8 @@
       return;
     }
 
-    if (acceptsBox && acceptsBox.checked && guestCount && !guestCount.value) {
+    if (acceptsBox && acceptsBox.checked && guestCount &&
+        !(Number(guestCount.value) >= 1 && Number(guestCount.value) <= 10)) {
       guestCount.classList.add("rsvp-field-invalid");
       guestCount.focus();
       return;

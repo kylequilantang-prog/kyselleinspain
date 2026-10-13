@@ -1026,6 +1026,164 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* =================================================================
+   REGISTRY
+   ================================================================= */
+.registry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: min(56.25vw, 820px);
+}
+
+.registry-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.registry-panel-card {
+  background-image:
+    linear-gradient(rgba(27, 33, 38, 0.1), rgba(27, 33, 38, 0.1)),
+    url("assets/imagery/date-section.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.registry-panel-photos {
+  background-image: url("assets/imagery/cream-bg-texture.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.registry-card {
+  position: relative;
+  z-index: 1;
+  width: min(360px, 100%);
+  background: var(--cream);
+  padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 4vw, 2.25rem);
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  transform: rotate(-1deg);
+}
+
+.registry-title {
+  color: var(--pink);
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+}
+
+.registry-highlight {
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin: 0 0 1.5rem;
+}
+
+.registry-text {
+  color: var(--ink);
+  margin: 0 0 1.25rem;
+}
+
+.registry-text:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.registry-text a {
+  color: var(--maroon);
+}
+
+.registry-button {
+  display: inline-block;
+  padding: 0.85rem 2.5rem;
+  background: var(--maroon);
+  color: var(--cream);
+  font-family: var(--font-body);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.registry-button:hover {
+  background: var(--pink);
+  color: var(--cream);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.registry-flowers {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -3%;
+  width: clamp(130px, 16vw, 200px);
+  transform: rotate(-10deg);
+  pointer-events: none;
+}
+
+.registry-polaroid {
+  position: absolute;
+  width: min(280px, 46%);
+  margin: 0;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.registry-polaroid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.registry-polaroid-1 {
+  top: 10%;
+  left: 6%;
+  transform: rotate(-4deg);
+  z-index: 1;
+}
+
+.registry-polaroid-2 {
+  top: 46%;
+  left: 34%;
+  transform: rotate(3deg);
+  z-index: 2;
+}
+
+@media (max-width: 800px) {
+  .registry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registry-panel-card {
+    min-height: 480px;
+  }
+
+  .registry-panel-photos {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 500px) {
+  .registry-polaroid {
+    width: min(220px, 56%);
+  }
+
+  .registry-polaroid-1 {
+    left: 2%;
+  }
+
+  .registry-polaroid-2 {
+    left: 38%;
+  }
+}
+
+/* =================================================================
    RSVP
    ================================================================= */
 .rsvp {
