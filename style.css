@@ -1595,3 +1595,10 @@ img { max-width: 100%; height: auto; display: block; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ---------------------------------------------------------------
+   Temporary: show only the first (hero) section on the home page.
+   Delete this block to bring the other sections and nav links back.
+   --------------------------------------------------------------- */
+#main > section:not(#home) { display: none; }
+.site-nav a[href^="#"]:not([href="#home"]) { display: none; }
