@@ -1600,5 +1600,5 @@ img { max-width: 100%; height: auto; display: block; }
    Temporary: show only the first (hero) section on the home page.
    Delete this block to bring the other sections and nav links back.
    --------------------------------------------------------------- */
-#main > section:not(#home) { display: none; }
+#main > section.hero ~ section { display: none; }
 .site-nav a[href^="#"]:not([href="#home"]) { display: none; }
